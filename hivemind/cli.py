@@ -2075,7 +2075,7 @@ def _startup_animation():
         "        [bold yellow].[/][bold bright_red]╱[/][bold bright_yellow]▲[/][bold bright_red]╲[/][bold yellow].[/]",
         "       [bold bright_yellow]╱[/][bold bright_red]▓[/][bold bright_yellow]▓[/][bold bright_red]▓[/][bold bright_yellow]╲[/]",
         "      [bold yellow]╱[/][bold bright_red]▓[/][bold bright_yellow]█[/][bold bright_red]▓[/][bold bright_yellow]█[/][bold bright_red]▓[/][bold yellow]╲[/]",
-        f"     [bold bright_yellow]⚡[/] [bold bright_magenta]{APP_NAME}[/] [bold bright_yellow]⚡[/]",
+        f"      [bold bright_red]{APP_NAME}[/]",
     ]
     with Live(console=console, refresh_per_second=12, transient=True) as live:
         for f in frames:
