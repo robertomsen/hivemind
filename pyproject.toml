@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hivemind-ai"
+dynamic = ["version"]
+description = "An interactive AI assistant for the terminal with multi-agent swarm orchestration."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+dependencies = [
+    "rich>=13.0",
+    "prompt-toolkit>=3.0",
+    "httpx>=0.24",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.30"]
+openai = ["openai>=1.0"]
+all = ["anthropic>=0.30", "openai>=1.0"]
+
+[project.scripts]
+hivemind = "hivemind.cli:_entry"
+
+[tool.setuptools.dynamic]
+version = {attr = "hivemind.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["hivemind*"]

@@ -1,0 +1,34 @@
+# Entornos virtuales
+.venv/
+venv/
+path/
+
+# Bytecode / cache de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Artefactos de build y distribución
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Variables de entorno y secretos
+.env
+.env.*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Claude Code
+.claude/
